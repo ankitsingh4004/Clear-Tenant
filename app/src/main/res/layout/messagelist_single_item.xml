@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:elevation="50dp"
+    android:translationZ="20dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RLWo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvWoNum"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="WO Number"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/workOrderNumber_messageAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_below="@+id/tvWoNum"/>
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/tvWoNum"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/date_messageAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/tvWoNum"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/tvdate"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/RLWo" >
+
+        <TextView
+            android:id="@+id/tvmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:paddingLeft="5dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/message_messageAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvmessage"
+            android:text="Message"
+            android:paddingLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

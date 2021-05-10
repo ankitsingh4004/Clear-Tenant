@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.UpdateIssue">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/LLUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILUpdateWoNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/tvUpdateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Work Order Number"
+                android:fontFamily="serif"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILUpdateDaeEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/tvUpdateDateEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Entered"
+                android:inputType="date"
+                android:focusable="false"
+                android:editable="false"
+                android:clickable="false"
+                android:fontFamily="serif"
+                android:drawableTint="@color/button_color"
+
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+     <TextView
+            android:id="@+id/TILUpdateDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+
+            <EditText
+                android:id="@+id/tvUpdateDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_box"
+                android:textAlignment="viewStart"
+                android:inputType="textMultiLine"
+                android:gravity="start" />
+
+
+
+        <TextView
+            android:id="@+id/tvUpdateProcessType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+
+            android:fontFamily="serif"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_box"
+            android:layout_margin="5dp"
+            android:layout_height="50dp">
+
+            <Spinner
+                android:id="@+id/SpinnerUpdatePriority"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/spinner_background" >
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILExStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/etExStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expected Start Date"
+                android:inputType="date"
+                android:editable="false"
+                android:focusable="false"
+                android:clickable="true"
+                android:fontFamily="serif"
+                android:drawableTint="@color/button_color"
+                android:drawableRight="@drawable/date_icon"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILExEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/etExEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expected End Date"
+                android:inputType="date"
+                android:focusable="false"
+                android:editable="false"
+                android:clickable="true"
+                android:fontFamily="serif"
+                android:drawableTint="@color/button_color"
+                android:drawableRight="@drawable/date_icon"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <!-- <Button
+            android:id="@+id/btnbacktoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back To List"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="16dp"
+            android:background="@drawable/shape"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="10dp"/>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnbacktoList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to List"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:background="@drawable/shape"
+                android:textColor="#fff"
+                android:layout_gravity="left"
+                android:paddingRight="40dp"
+                android:paddingLeft="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+            <Button
+                android:id="@+id/btnUpdateIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Issue"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape"
+                android:textColor="#fff"
+                android:layout_gravity="right"
+                android:paddingRight="45dp"
+                android:paddingLeft="45dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginEnd="5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

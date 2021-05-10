@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Activity.Registration">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:id="@+id/ScroolView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="52dp">
+
+    <RelativeLayout
+        android:id="@+id/RLPersonalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tvPersonalInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:text="Personal Information"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPersonalInformation">
+
+            <EditText
+                android:id="@+id/etFname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="First Name"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILfname">
+
+            <EditText
+                android:id="@+id/etLname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Last Name"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvAccountInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILlname"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:text="Account Information"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILemailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAccountInformation">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILVemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILemailId">
+
+            <EditText
+                android:id="@+id/etVemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Verify Email Id"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILVemail"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILPcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILPassword">
+
+            <EditText
+                android:id="@+id/etPcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Confirm Password"
+                android:inputType="textWebPassword"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvAddressInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILPcheck"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:text="Address Information"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddressInformation">
+
+            <EditText
+                android:id="@+id/etAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Address1"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILAddress1">
+
+            <EditText
+                android:id="@+id/etAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Address2"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILAddress2">
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="City"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILCity">
+
+            <EditText
+                android:id="@+id/etState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="State"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TILState">
+
+            <EditText
+                android:id="@+id/etPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="Post Code"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape"
+            android:layout_below="@+id/TILPostalCode"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnSubmit"
+            >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

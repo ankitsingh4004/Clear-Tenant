@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".Activity.MainActivity">
+
+      <!--  <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/white"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logoutBtn"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20sp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/createIssueBtn"
+                        android:text="New Issue"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/shape"
+                        android:layout_marginRight="5sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/messageBtn"
+                        android:text="Messages"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/shape"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:id="@+id/LogoutBtn"
+                        android:text="Logout"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/green_background_btn"/>
+
+                </LinearLayout>
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/refresh"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/tenantRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRecordFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

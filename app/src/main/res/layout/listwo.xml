@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp"
+    android:background="@drawable/dropdownshape"
+    app:cardCornerRadius="5dp"
+    app:layout_goneMarginBottom="5dp"
+    app:cardBackgroundColor="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+    <RelativeLayout
+        android:id="@+id/RLUniqueId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/tvUniqueId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:text="Unique Id"/>
+
+        <TextView
+            android:id="@+id/tvUnique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unique"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvUniqueId"/>
+
+        <TextView
+            android:id="@+id/tvWoNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="WO Number"/>
+
+
+
+        <TextView
+            android:id="@+id/tvwoNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWoNumber"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="WO Number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLDateEntered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLUniqueId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <TextView
+            android:id="@+id/tvDateEntered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:text="Date Entered"/>
+
+        <TextView
+            android:id="@+id/tvdateEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_below="@+id/tvDateEntered"
+            android:layout_marginLeft="10dp"
+            android:text="Unique"/>
+
+        <TextView
+            android:id="@+id/tvDateUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:layout_alignParentRight="true"
+            android:text="Date Updated"/>
+
+        <TextView
+            android:id="@+id/tvdateUpdae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateUpdate"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Date Update"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RLExpectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLDateEntered"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvExpectedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:text="Expected Start Date"/>
+
+            <TextView
+                android:id="@+id/tvdateExpected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:layout_below="@+id/tvExpectedDate"
+                android:text="Ex. Start Date"/>
+
+            <TextView
+                android:id="@+id/tvExpectedEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:layout_alignParentRight="true"
+                android:text="Expected End Date"/>
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_below="@+id/tvExpectedEndDate"
+                android:layout_alignParentRight="true"
+                android:fontFamily="serif"
+                android:layout_marginRight="10dp"
+                android:text="End Date"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RLstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLExpectedDate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvstatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:text="Status"/>
+
+            <TextView
+                android:id="@+id/tvstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:layout_below="@+id/tvstatusText"
+                android:text="Status"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RLUpdateIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLstatus"
+            android:layout_alignParentRight="false">
+
+            <ImageView
+                android:id="@+id/UpdateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/update_icon"
+                android:tint="@color/button_color"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
